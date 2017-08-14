@@ -6,7 +6,7 @@
 //  Copyright © 2017년 Clint Jang. All rights reserved.
 //
 #import "ViewController.h"
-#import "TextCellTableViewCell.h"
+#import "TextTableViewCell.h"
 
 
 /**
@@ -149,8 +149,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *cellIdentifier = NSStringFromClass([TextCellTableViewCell class]);
-    TextCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    NSString *cellIdentifier = NSStringFromClass([TextTableViewCell class]);
+    TextTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     [cell initLayoutWithData:self.list[indexPath.row]];
     return cell;
 }

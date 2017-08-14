@@ -1,18 +1,18 @@
 //
-//  TextCellTableViewCell.m
+//  TextTableViewCell.m
 //  JWSTableViewAutomaticDimension
 //
 //  Created by Jang Wangsu on 2017. 8. 8..
 //  Copyright © 2017년 Clint Jang. All rights reserved.
 //
 
-#import "TextCellTableViewCell.h"
-@interface TextCellTableViewCell ()
+#import "TextTableViewCell.h"
+@interface TextTableViewCell ()
 @property (weak, nonatomic) IBOutlet UILabel *textLabel;
 
 @end
 
-@implementation TextCellTableViewCell
+@implementation TextTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

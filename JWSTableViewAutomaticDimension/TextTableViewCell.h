@@ -1,5 +1,5 @@
 //
-//  TextCellTableViewCell.h
+//  TextTableViewCell.h
 //  JWSTableViewAutomaticDimension
 //
 //  Created by Jang Wangsu on 2017. 8. 8..
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Common.h"
 
-@interface TextCellTableViewCell : UITableViewCell
+@interface TextTableViewCell : UITableViewCell
 
 /**
  @brief init layout

@@ -13,7 +13,7 @@
 		BC3A83521F394110002ED8EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3A83501F394110002ED8EB /* Main.storyboard */; };
 		BC3A83541F394110002ED8EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3A83531F394110002ED8EB /* Assets.xcassets */; };
 		BC3A83571F394110002ED8EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3A83551F394110002ED8EB /* LaunchScreen.storyboard */; };
-		BC3A83601F39489B002ED8EB /* TextCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3A835F1F39489B002ED8EB /* TextCellTableViewCell.m */; };
+		BC3A83601F39489B002ED8EB /* TextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3A835F1F39489B002ED8EB /* TextTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		BC3A83531F394110002ED8EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC3A83561F394110002ED8EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC3A83581F394110002ED8EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC3A835E1F39489B002ED8EB /* TextCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextCellTableViewCell.h; sourceTree = "<group>"; };
-		BC3A835F1F39489B002ED8EB /* TextCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextCellTableViewCell.m; sourceTree = "<group>"; };
+		BC3A835E1F39489B002ED8EB /* TextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTableViewCell.h; sourceTree = "<group>"; };
+		BC3A835F1F39489B002ED8EB /* TextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTableViewCell.m; sourceTree = "<group>"; };
 		BC3A83841F395514002ED8EB /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,8 +67,8 @@
 				BC3A834B1F394110002ED8EB /* AppDelegate.m */,
 				BC3A834D1F394110002ED8EB /* ViewController.h */,
 				BC3A834E1F394110002ED8EB /* ViewController.m */,
-				BC3A835E1F39489B002ED8EB /* TextCellTableViewCell.h */,
-				BC3A835F1F39489B002ED8EB /* TextCellTableViewCell.m */,
+				BC3A835E1F39489B002ED8EB /* TextTableViewCell.h */,
+				BC3A835F1F39489B002ED8EB /* TextTableViewCell.m */,
 				BC3A83501F394110002ED8EB /* Main.storyboard */,
 				BC3A83531F394110002ED8EB /* Assets.xcassets */,
 				BC3A83551F394110002ED8EB /* LaunchScreen.storyboard */,
@@ -160,7 +160,7 @@
 			files = (
 				BC3A834F1F394110002ED8EB /* ViewController.m in Sources */,
 				BC3A834C1F394110002ED8EB /* AppDelegate.m in Sources */,
-				BC3A83601F39489B002ED8EB /* TextCellTableViewCell.m in Sources */,
+				BC3A83601F39489B002ED8EB /* TextTableViewCell.m in Sources */,
 				BC3A83491F394110002ED8EB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
