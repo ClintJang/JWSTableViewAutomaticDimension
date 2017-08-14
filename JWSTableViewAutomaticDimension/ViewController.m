@@ -11,7 +11,11 @@
 
 /**
  Ref URL 01 : https://www.appcoda.com/self-sizing-cells/
+ Ref URL 02 : https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/WorkingwithSelf-SizingTableViewCells.html
+ Ref URL 03 : http://readme.skplanet.com/?p=11461
+ Ref URL 04 : https://www.raywenderlich.com/129059/self-sizing-table-view-cells
  
+ @Brief Self-Sizing Table View Cells Sample App
  */
 
 
@@ -143,6 +147,7 @@
 #pragma mark - UITableViewDataSource
 @implementation ViewController (tableview)
 
+// 섹션당 셀 카운트는 테스트라 동일하게 구성
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.list count];
@@ -156,6 +161,10 @@
     return cell;
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
 #pragma mark - UITableViewDelegate
 
 @end

@@ -17,5 +17,5 @@
 @end
 
 
-@interface ViewController (tableview)
+@interface ViewController (tableview) <UITableViewDataSource, UITableViewDelegate> // 딜리게이트는 함수링크를 위해
 @end
