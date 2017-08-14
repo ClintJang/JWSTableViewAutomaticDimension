@@ -94,6 +94,44 @@
                                             <outlet property="sampleImageViewLayoutConstraintWidth" destination="Xj0-0z-Kda" id="QIi-er-cw0"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TextAndImageTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextAndImageTableViewCell" id="yhl-qZ-LDo" customClass="TextAndImageTableViewCell">
+                                        <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yhl-qZ-LDo" id="7Ym-1L-11z">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6UL-Y9-50j">
+                                                    <rect key="frame" x="5" y="0.0" width="44" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="IkW-Iq-HAh"/>
+                                                        <constraint firstAttribute="width" constant="44" id="QfA-od-l1o"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Co0-Su-OSd">
+                                                    <rect key="frame" x="54" y="10" width="311" height="28.5"/>
+                                                    <color key="backgroundColor" red="0.84813811210000001" green="0.84813811210000001" blue="0.84813811210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Co0-Su-OSd" firstAttribute="leading" secondItem="6UL-Y9-50j" secondAttribute="trailing" constant="5" id="1Tu-hp-0pd"/>
+                                                <constraint firstItem="6UL-Y9-50j" firstAttribute="leading" secondItem="7Ym-1L-11z" secondAttribute="leading" constant="5" id="WzK-LI-R2j"/>
+                                                <constraint firstItem="6UL-Y9-50j" firstAttribute="top" secondItem="7Ym-1L-11z" secondAttribute="top" id="ice-BO-6XE"/>
+                                                <constraint firstAttribute="bottom" secondItem="Co0-Su-OSd" secondAttribute="bottom" constant="5" id="jko-bd-K2R"/>
+                                                <constraint firstAttribute="trailing" secondItem="Co0-Su-OSd" secondAttribute="trailing" constant="10" id="uLl-rS-LeT"/>
+                                                <constraint firstItem="Co0-Su-OSd" firstAttribute="top" secondItem="7Ym-1L-11z" secondAttribute="top" constant="10" id="zah-G4-BSH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="sampleImageView" destination="6UL-Y9-50j" id="K2U-4X-8Of"/>
+                                            <outlet property="sampleImageViewLayoutConstraintHeight" destination="IkW-Iq-HAh" id="7op-0t-eIM"/>
+                                            <outlet property="sampleImageViewLayoutConstraintWidth" destination="QfA-od-l1o" id="xLP-na-h8U"/>
+                                            <outlet property="textMsgLabel" destination="Co0-Su-OSd" id="G5z-2T-a6P"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="YeF-FE-zZo"/>

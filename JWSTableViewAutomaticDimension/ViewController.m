@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "TextTableViewCell.h"
 #import "ImageTableViewCell.h"
+#import "TextAndImageTableViewCell.h"
 
 
 /**
@@ -172,16 +173,25 @@
         [cell initLayoutWithData:self.list[indexPath.row]];
         return cell;
     }
+    else if (indexPath.section == 2)
+    {
+        NSString *cellIdentifier = NSStringFromClass([TextAndImageTableViewCell class]);
+        TextAndImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+        [cell initLayoutWithData:self.list[indexPath.row]];
+        return cell;
+    }
     else
     {
+        assert(false);
         return nil;
     }
 
 }
 
+// 섹션 수~
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 3;
 }
 #pragma mark - UITableViewDelegate
 // 헤더 높이
@@ -195,7 +205,8 @@
 {
     NSString *labelString = [NSString string];
     if (section == 0) { labelString =@" >> Text TEST Section"; }
-    else if (section == 0) { labelString =@" >> Image TEST Section"; }
+    else if (section == 1) { labelString =@" >> Image TEST Section"; }
+    else if (section == 2) { labelString =@" >> Text And Image TEST Section"; }
 
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.tableView.frame.size.width, 20.0f)];
     [view setBackgroundColor:[UIColor greenColor]];

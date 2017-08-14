@@ -1,13 +1,14 @@
 //
-//  ImageTableViewCell.m
+//  TextAndImageTableViewCell.m
 //  JWSTableViewAutomaticDimension
 //
 //  Created by Jang Wangsu on 2017. 8. 14..
 //  Copyright © 2017년 Clint Jang. All rights reserved.
 //
 
-#import "ImageTableViewCell.h"
-@interface ImageTableViewCell ()
+#import "TextAndImageTableViewCell.h"
+@interface TextAndImageTableViewCell ()
+@property (weak, nonatomic) IBOutlet UILabel *textMsgLabel;
 
 @property (weak, nonatomic) IBOutlet UIImageView *sampleImageView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *sampleImageViewLayoutConstraintWidth;
@@ -15,7 +16,7 @@
 
 @end
 
-@implementation ImageTableViewCell
+@implementation TextAndImageTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -47,6 +48,12 @@
         self.sampleImageViewLayoutConstraintWidth.constant = 0.0f;
         self.sampleImageViewLayoutConstraintHeight.constant = 0.0f;
     }
+    
+    // Text Setting TEST
+    NSString *textString = [data objectForKey:kTextKey];
+    [self.textMsgLabel setText:textString];
+    
+    
 }
 
 @end

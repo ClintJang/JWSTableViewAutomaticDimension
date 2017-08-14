@@ -15,6 +15,7 @@
 		BC3A83571F394110002ED8EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3A83551F394110002ED8EB /* LaunchScreen.storyboard */; };
 		BCD91B271F41717F009AAC87 /* TextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD91B261F41717F009AAC87 /* TextTableViewCell.m */; };
 		BCD91B2A1F4171A5009AAC87 /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD91B291F4171A5009AAC87 /* ImageTableViewCell.m */; };
+		BCD91B2D1F417800009AAC87 /* TextAndImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD91B2C1F417800009AAC87 /* TextAndImageTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		BCD91B261F41717F009AAC87 /* TextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextTableViewCell.m; path = JWSTableViewAutomaticDimension/Class/Cell/TextTableViewCell.m; sourceTree = SOURCE_ROOT; };
 		BCD91B281F4171A5009AAC87 /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageTableViewCell.h; path = JWSTableViewAutomaticDimension/Class/Cell/ImageTableViewCell.h; sourceTree = SOURCE_ROOT; };
 		BCD91B291F4171A5009AAC87 /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageTableViewCell.m; path = JWSTableViewAutomaticDimension/Class/Cell/ImageTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		BCD91B2B1F417800009AAC87 /* TextAndImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextAndImageTableViewCell.h; path = JWSTableViewAutomaticDimension/Class/Cell/TextAndImageTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		BCD91B2C1F417800009AAC87 /* TextAndImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextAndImageTableViewCell.m; path = JWSTableViewAutomaticDimension/Class/Cell/TextAndImageTableViewCell.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				BCD91B261F41717F009AAC87 /* TextTableViewCell.m */,
 				BCD91B281F4171A5009AAC87 /* ImageTableViewCell.h */,
 				BCD91B291F4171A5009AAC87 /* ImageTableViewCell.m */,
+				BCD91B2B1F417800009AAC87 /* TextAndImageTableViewCell.h */,
+				BCD91B2C1F417800009AAC87 /* TextAndImageTableViewCell.m */,
 			);
 			name = Cell;
 			path = Class/Cell;
@@ -180,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD91B2D1F417800009AAC87 /* TextAndImageTableViewCell.m in Sources */,
 				BC3A834F1F394110002ED8EB /* ViewController.m in Sources */,
 				BC3A834C1F394110002ED8EB /* AppDelegate.m in Sources */,
 				BCD91B2A1F4171A5009AAC87 /* ImageTableViewCell.m in Sources */,
