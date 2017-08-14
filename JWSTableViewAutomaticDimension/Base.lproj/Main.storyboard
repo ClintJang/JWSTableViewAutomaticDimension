@@ -67,6 +67,33 @@
                                             <outlet property="textMsgLabel" destination="CN2-LO-9xl" id="uaY-cl-1qo"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageTableViewCell" id="36l-za-uOV" customClass="ImageTableViewCell">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="36l-za-uOV" id="rvo-CM-OeF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d9m-37-NQ3">
+                                                    <rect key="frame" x="67" y="5" width="240" height="33.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="240" id="Xj0-0z-Kda"/>
+                                                        <constraint firstAttribute="height" constant="33.5" id="g6b-VJ-Nqe"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="d9m-37-NQ3" firstAttribute="centerX" secondItem="rvo-CM-OeF" secondAttribute="centerX" id="FqZ-2r-J0O"/>
+                                                <constraint firstItem="d9m-37-NQ3" firstAttribute="top" secondItem="rvo-CM-OeF" secondAttribute="top" constant="5" id="Yjy-ta-h6a"/>
+                                                <constraint firstAttribute="bottom" secondItem="d9m-37-NQ3" secondAttribute="bottom" constant="5" id="lB5-wG-fdq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="sampleImageView" destination="d9m-37-NQ3" id="dA1-Db-aVc"/>
+                                            <outlet property="sampleImageViewLayoutConstraintHeight" destination="g6b-VJ-Nqe" id="rzf-YI-fAU"/>
+                                            <outlet property="sampleImageViewLayoutConstraintWidth" destination="Xj0-0z-Kda" id="QIi-er-cw0"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="YeF-FE-zZo"/>

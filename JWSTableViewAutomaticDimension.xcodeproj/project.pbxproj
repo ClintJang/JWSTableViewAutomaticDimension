@@ -13,7 +13,8 @@
 		BC3A83521F394110002ED8EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3A83501F394110002ED8EB /* Main.storyboard */; };
 		BC3A83541F394110002ED8EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3A83531F394110002ED8EB /* Assets.xcassets */; };
 		BC3A83571F394110002ED8EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3A83551F394110002ED8EB /* LaunchScreen.storyboard */; };
-		BC3A83601F39489B002ED8EB /* TextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3A835F1F39489B002ED8EB /* TextTableViewCell.m */; };
+		BCD91B271F41717F009AAC87 /* TextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD91B261F41717F009AAC87 /* TextTableViewCell.m */; };
+		BCD91B2A1F4171A5009AAC87 /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD91B291F4171A5009AAC87 /* ImageTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +28,11 @@
 		BC3A83531F394110002ED8EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC3A83561F394110002ED8EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC3A83581F394110002ED8EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC3A835E1F39489B002ED8EB /* TextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextTableViewCell.h; path = Class/Cell/TextTableViewCell.h; sourceTree = "<group>"; };
-		BC3A835F1F39489B002ED8EB /* TextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextTableViewCell.m; path = Class/Cell/TextTableViewCell.m; sourceTree = "<group>"; };
 		BC3A83841F395514002ED8EB /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		BCD91B251F41717F009AAC87 /* TextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextTableViewCell.h; path = JWSTableViewAutomaticDimension/Class/Cell/TextTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		BCD91B261F41717F009AAC87 /* TextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextTableViewCell.m; path = JWSTableViewAutomaticDimension/Class/Cell/TextTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		BCD91B281F4171A5009AAC87 /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageTableViewCell.h; path = JWSTableViewAutomaticDimension/Class/Cell/ImageTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		BCD91B291F4171A5009AAC87 /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageTableViewCell.m; path = JWSTableViewAutomaticDimension/Class/Cell/ImageTableViewCell.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +65,12 @@
 		BC3A83461F394110002ED8EB /* JWSTableViewAutomaticDimension */ = {
 			isa = PBXGroup;
 			children = (
+				BCD91B231F417131009AAC87 /* Class */,
 				BC3A83841F395514002ED8EB /* Common.h */,
 				BC3A834A1F394110002ED8EB /* AppDelegate.h */,
 				BC3A834B1F394110002ED8EB /* AppDelegate.m */,
 				BC3A834D1F394110002ED8EB /* ViewController.h */,
 				BC3A834E1F394110002ED8EB /* ViewController.m */,
-				BC3A835E1F39489B002ED8EB /* TextTableViewCell.h */,
-				BC3A835F1F39489B002ED8EB /* TextTableViewCell.m */,
 				BC3A83501F394110002ED8EB /* Main.storyboard */,
 				BC3A83531F394110002ED8EB /* Assets.xcassets */,
 				BC3A83551F394110002ED8EB /* LaunchScreen.storyboard */,
@@ -84,6 +86,26 @@
 				BC3A83481F394110002ED8EB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCD91B231F417131009AAC87 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				BCD91B241F41713B009AAC87 /* Cell */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		BCD91B241F41713B009AAC87 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BCD91B251F41717F009AAC87 /* TextTableViewCell.h */,
+				BCD91B261F41717F009AAC87 /* TextTableViewCell.m */,
+				BCD91B281F4171A5009AAC87 /* ImageTableViewCell.h */,
+				BCD91B291F4171A5009AAC87 /* ImageTableViewCell.m */,
+			);
+			name = Cell;
+			path = Class/Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +182,8 @@
 			files = (
 				BC3A834F1F394110002ED8EB /* ViewController.m in Sources */,
 				BC3A834C1F394110002ED8EB /* AppDelegate.m in Sources */,
-				BC3A83601F39489B002ED8EB /* TextTableViewCell.m in Sources */,
+				BCD91B2A1F4171A5009AAC87 /* ImageTableViewCell.m in Sources */,
+				BCD91B271F41717F009AAC87 /* TextTableViewCell.m in Sources */,
 				BC3A83491F394110002ED8EB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

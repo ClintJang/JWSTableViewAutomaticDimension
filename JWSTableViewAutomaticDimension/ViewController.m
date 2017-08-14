@@ -7,6 +7,7 @@
 //
 #import "ViewController.h"
 #import "TextTableViewCell.h"
+#import "ImageTableViewCell.h"
 
 
 /**
@@ -46,7 +47,7 @@
                        "4절: 이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라사랑하세."
                        "(후렴) 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세."
                        "-이상입니다.-"
-                      ,kImageKey:@""
+                      ,kImageKey:@"sampleImage01_ 526_348"
                       },
                   @{
                       kTextKey :
@@ -62,7 +63,7 @@
                            "\n4절: 이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라사랑하세."
                            "\n(후렴) 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세."
                         "\n-이상입니다.-"
-                      ,kImageKey:@""
+                      ,kImageKey:@"sample_102_484"
                       },
                   @{
                       kTextKey :@"값이 없다면?"
@@ -155,16 +156,54 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *cellIdentifier = NSStringFromClass([TextTableViewCell class]);
-    TextTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    [cell initLayoutWithData:self.list[indexPath.row]];
-    return cell;
+    if (indexPath.section == 0)
+        // Text Sample
+    {
+        NSString *cellIdentifier = NSStringFromClass([TextTableViewCell class]);
+        TextTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+        [cell initLayoutWithData:self.list[indexPath.row]];
+        return cell;
+    }
+    else if (indexPath.section == 1)
+        // Image Sample
+    {
+        NSString *cellIdentifier = NSStringFromClass([ImageTableViewCell class]);
+        ImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+        [cell initLayoutWithData:self.list[indexPath.row]];
+        return cell;
+    }
+    else
+    {
+        return nil;
+    }
+
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 2;
 }
 #pragma mark - UITableViewDelegate
+// 헤더 높이
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 20.0f;
+}
 
+// 헤더 뷰
+- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    NSString *labelString = [NSString string];
+    if (section == 0) { labelString =@" >> Text TEST Section"; }
+    else if (section == 0) { labelString =@" >> Image TEST Section"; }
+
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.tableView.frame.size.width, 20.0f)];
+    [view setBackgroundColor:[UIColor greenColor]];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:view.frame];
+    [label setText:labelString];
+    [label setTextColor:[UIColor blackColor]];
+    [view addSubview:label];
+    return view;
+}
 @end
