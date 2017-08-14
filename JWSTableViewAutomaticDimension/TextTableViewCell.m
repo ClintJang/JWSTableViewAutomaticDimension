@@ -8,7 +8,7 @@
 
 #import "TextTableViewCell.h"
 @interface TextTableViewCell ()
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
+@property (weak, nonatomic) IBOutlet UILabel *textMsgLabel;
 
 @end
 
@@ -29,7 +29,7 @@
 {
     // Text Setting TEST
     NSString *textString = [data objectForKey:kTextKey];
-    [self.textLabel setText:textString];
+    [self.textMsgLabel setText:textString];
     
 }
 
