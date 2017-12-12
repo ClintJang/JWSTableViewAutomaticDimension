@@ -131,10 +131,8 @@
                       }
                   ];
     
-    // 이 두줄의 코드 만으로 셀크기를 동적으로 렌더링 하도록 지시할 수 있음!
-    // estimatedRowHeight : 예상 수치 설정, Default 0, 그러나 1로 하면 에러가 난다. 2 이상의 값으로 하자
-    self.tableView.estimatedRowHeight = 44.0f;
-    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    // Self-Sizing Table View Cells
+    [self setSelfSizingTableViewCells];
 }
 
 
@@ -143,6 +141,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Self-Sizing Table View Cells 
+- (void)setSelfSizingTableViewCells {
+    // These two lines of code will dynamically render the cell size.
+    // estimatedRowHeight : Setting the expected value, Default 0, but setting it to 1 causes an error. Let it be 2 or more
+    self.tableView.estimatedRowHeight = 44.0f;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+}
 
 @end
 
