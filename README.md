@@ -5,6 +5,7 @@
 Just TableView UITableViewAutomaticDimension Sample...
 
 (UITableViewAutomaticDimension is used to check whether the Cell UI is well reflected.)
+- The same swift source sample link: https://github.com/ClintJang/JWSTableViewAutomaticDimensionSwift
 
 # Info
 ## Result Image
