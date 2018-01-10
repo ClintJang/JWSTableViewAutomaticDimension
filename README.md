@@ -1,5 +1,5 @@
 # JWSTableViewAutomaticDimension
-[![License](http://img.shields.io/badge/License-MIT-green.svg?style=flat)](https://github.com/clintjang/JWSBoltsSwiftSample/blob/master/LICENSE) [![objective-c](https://img.shields.io/badge/objective-Apple-orange.svg?style=flat)](https://swift.org) [![Twitter: @clintjang](https://img.shields.io/badge/Contact-Twitter-blue.svg?style=flat)](https://twitter.com/clintjang)
+[![License](http://img.shields.io/badge/License-MIT-green.svg?style=flat)](https://github.com/clintjang/JWSBoltsSwiftSample/blob/master/LICENSE) [![objective-c](https://img.shields.io/badge/objective-Apple-orange.svg?style=flat)](https://swift.org) 
 
 ## Description
 Just TableView UITableViewAutomaticDimension Sample...
